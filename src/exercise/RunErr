@@ -1,0 +1,4 @@
+콘솔 창에 한글로 출력이 안될 때
+
+1. Run configurations에서 출력이 안되는 java파일 선택
+2. 해당 파일의 common탭에서 Encoding을 other 선택 후 MS949 입력

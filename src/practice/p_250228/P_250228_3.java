@@ -37,8 +37,9 @@ public class P_250228_3 {
 		double num1 = 1.2345;
 		int num2 = 6;
 
-		// 
-		System.out.println("num1 + num2 = " + num1 + num2);
+		// double형과 int형의 덧셈일 경우 큰 자료형으로 자동 형변환 되어
+		// double num1 =  1.234; double num2 = 6.000;으로 계산되어 7.234가 될것으로 예상
+		System.out.println("num1 + num2 = " + (num1 + num2));
 
 	} // main 끝
 

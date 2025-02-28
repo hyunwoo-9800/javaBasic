@@ -26,7 +26,8 @@ public class P_250228_2 {
 		// 숫자 뒤에 d가 붙었으므로 double형
 		double dd = 23d;
 		
-		// 지수가 포함된 double형
+		// E는 지수 표기 법으로 14의 10승을 의미함
+		// 지수가 포함된 큰 수는 double형으로 선언
 		double ddd = 14E10;
 		
 		// ''안에 있는 문자 한개는 char형

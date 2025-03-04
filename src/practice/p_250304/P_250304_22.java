@@ -18,11 +18,11 @@ public class P_250304_22 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.print("   1");
-		System.out.println();
-		System.out.print("  12");
-		System.out.println();
-		System.out.print(" 123");
+		String str1 = "hello";
+		String str2 = "java";
+
+		System.out.println(str1);
+		System.out.println(str2);
 
 	} // main 끝
 

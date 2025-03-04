@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 /**
  * 
- * 센티미터
+ * 두 수의 차이
  * 
  */
 public class P_250304_76 {
@@ -77,6 +77,10 @@ public class P_250304_76 {
 
 			System.out.println("두 수의 차이는? " + (x - y));
 
+		}  else {
+			
+			System.out.println("숫자로 입력해주세요");
+			
 		}
 		
 		sc.close();

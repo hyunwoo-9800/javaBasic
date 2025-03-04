@@ -18,11 +18,13 @@ public class P_250304_20 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// 1234
-		// 56
-		System.out.print("12");
-		System.out.println("34");
-		System.out.println("56");
+		// hello World
+		// (앞에 띄어쓰기 있음)World
+		// hello
+		System.out.print("hello");
+		System.out.println(" World");
+		System.out.println(" World");
+		System.out.print("hello");
 
 	} // main 끝
 

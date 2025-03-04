@@ -67,6 +67,10 @@ public class P_250304_74 {
 
 			}
 
+		}  else {
+			
+			System.out.println("숫자로 입력해주세요");
+			
 		}
 		
 		sc.close();

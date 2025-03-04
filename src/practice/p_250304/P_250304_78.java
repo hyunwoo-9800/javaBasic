@@ -4,8 +4,6 @@
 package practice.p_250304;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * 
@@ -55,8 +53,12 @@ public class P_250304_78 {
 
 			System.out.printf("입력하신 키는 cm로 %-10.2fcm입니다.", x);
 
+		} else {
+			
+			System.out.println("숫자로 입력해주세요");
+			
 		}
-		
+
 		sc.close();
 
 	} // main 끝

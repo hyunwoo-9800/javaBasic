@@ -4,8 +4,6 @@
 package practice.p_250304;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * 
@@ -103,6 +101,10 @@ public class P_250304_77 {
 
 			System.out.printf("국어 : %d 영어 : %d 수학: %d 평균 : %f", x, y, z, avg);
 
+		}  else {
+			
+			System.out.println("숫자로 입력해주세요");
+			
 		}
 		
 		sc.close();

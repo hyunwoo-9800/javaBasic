@@ -4,8 +4,6 @@
 package practice.p_250304;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * 
@@ -81,6 +79,10 @@ public class P_250304_79 {
 			
 			System.out.println("지불하실 금액은 " + (boxPrice + onePrice) + "원 입니다.");
 
+		} else {
+			
+			System.out.println("숫자로 입력해 주세요.");
+			
 		}
 		
 		sc.close();

@@ -5,7 +5,7 @@ package practice.p_250304;
 
 /**
  * 
- * 성적표 출력
+ * "*" 출력 예제 클래스
  * 
  */
 public class P_250304_15 {
@@ -16,23 +16,66 @@ public class P_250304_15 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-	
-		String str = """
-					 ******************
-					 *      성적표      *
-					 ******************
-					 * 국어 \t50 \t *
-					 ******************
-					 * 영어 \t50 \t *
-					 ******************
-					 * 수학 \t50 \t *
-					 ******************
-					 * 컴퓨터 학과         홍길동*
-					 ******************
-					 """;
-		
-		System.out.print(str);
+		// 카운트 변수
+		int cnt1 = 0;
+		int cnt2 = 0;
+		int cnt3 = 0;
 
+		System.out.println("사각형 출력 연습");
+
+		// 사각형 출력
+		for (cnt1 = 0; cnt1 <= 4; cnt1++) {
+
+			for (cnt2 = 0; cnt2 <= 3; cnt2++) {
+
+				System.out.print("*");
+			}
+
+			System.out.println("*");
+
+		} // 사각형 for 끝
+
+		System.out.println("=========================");
+		System.out.println("삼각형 출력 연습 01");
+
+		// 삼각형 출력
+		for (cnt1 = 0; cnt1 <= 4; cnt1++) {
+
+			for (cnt2 = 0; cnt2 <= cnt1; cnt2++) {
+
+				System.out.print("*");
+			}
+
+			System.out.println();
+
+		} // 삼각형 for 끝
+
+		System.out.println();
+
+		System.out.println("=========================");
+		System.out.println("삼각형 출력 연습 02");
+
+		// 삼각형 출력
+		for (cnt1 = 0; cnt1 <= 5; cnt1++) {
+
+			for (cnt2 = 5; 0 < cnt2; cnt2--) {
+
+				if (cnt1 < cnt2) {
+
+					System.out.print(" ");
+
+				} else {
+					
+					System.out.print("*");
+				
+				}
+			
+			}
+			
+			System.out.println();
+			
+		} // 삼각형 for 끝
+		
 	} // main 끝
 
 } // class 끝

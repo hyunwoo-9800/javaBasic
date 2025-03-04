@@ -18,15 +18,13 @@ public class P_250304_26 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.print("  *  ");
+		System.out.print("   *");
 		System.out.println();
-		System.out.print(" *** ");
+		System.out.print("  **");
 		System.out.println();
-		System.out.print("*****");
+		System.out.print(" ***");
 		System.out.println();
-		System.out.print(" *** ");
-		System.out.println();
-		System.out.print("  *  ");
+		System.out.print("****");
 
 	} // main 끝
 

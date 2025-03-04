@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /**
  * 
- * 출력 연습
+ * 출력결과
  * 
  */
 public class P_250304_21 {
@@ -18,11 +18,11 @@ public class P_250304_21 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String str1 = "hello";
-		String str2 = "java";
-
-		System.out.println(str1);
-		System.out.println(str2);
+		// 1234
+		// 56
+		System.out.print("12");
+		System.out.println("34");
+		System.out.println("56");
 
 	} // main 끝
 

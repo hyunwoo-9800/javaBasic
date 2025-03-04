@@ -3,10 +3,6 @@
  */
 package practice.p_250304;
 
-import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 /**
  * 
  * 반지름 계산

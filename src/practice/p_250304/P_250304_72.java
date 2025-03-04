@@ -4,7 +4,6 @@
 package practice.p_250304;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
 
 /**
  * 
@@ -80,6 +79,10 @@ public class P_250304_72 {
 			// 출력
 			System.out.println("입력하신 사각형의 넓이는 "+ (x * y) + "cm²" + "입니다.");
 
+		} else {
+			
+			System.out.println("숫자로 입력해주세요");
+			
 		}
 		
 		sc.close();

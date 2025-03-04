@@ -4,7 +4,6 @@
 package practice.p_250304;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
 
 /**
  * 
@@ -100,6 +99,10 @@ public class P_250304_75 {
 			// 출력
 			System.out.println("입력하신 사다리꼴에 심을 잔디의 가격은 " + ((x + y) * z / 2) + "원 입니다.");
 
+		}  else {
+			
+			System.out.println("숫자로 입력해주세요");
+			
 		}
 
 		sc.close();

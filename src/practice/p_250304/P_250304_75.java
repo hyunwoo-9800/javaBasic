@@ -31,12 +31,12 @@ public class P_250304_75 {
 		boolean flagY = true;
 		boolean flagZ = true;
 
-		// 세로의 크기
+		// 윗변
 		System.out.println("윗변의 길이를 입력해 주세요.");
 		String strX = sc.nextLine();
 
-		// 가로의 크기
-		System.out.println("아래볏의 길이를 입력해주세요.");
+		//아랫변
+		System.out.println("아랫볏의 길이를 입력해주세요.");
 		String strY = sc.nextLine();
 
 		// 높이
@@ -88,7 +88,7 @@ public class P_250304_75 {
 
 		}
 
-		// 둘다 숫자일 경우에만 값을 곱해서 출력
+		// 전부 숫자일 경우에만 값을 곱해서 출력
 		if (flagX && flagY && flagZ == true) {
 
 			// 입력받은 값을 int형으로 변환

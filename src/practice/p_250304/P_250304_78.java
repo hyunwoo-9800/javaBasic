@@ -27,7 +27,7 @@ public class P_250304_78 {
 		// 숫자일 경우에만 실행시킬 플래그
 		boolean flagX = true;
 
-		// 첫 번째 값을 입력 받음
+		// 키를 입력받음
 		System.out.printf("키를 입력해주세요(m단위로) >>>");
 		String strX = sc.nextLine();
 
@@ -46,7 +46,7 @@ public class P_250304_78 {
 
 		}
 
-		// 전부 숫자일 경우에만 값을 곱해서 출력
+		// 숫자일 계산해서 출력
 		if (flagX == true) {
 
 			double x = Double.parseDouble(strX);

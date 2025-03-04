@@ -23,7 +23,7 @@ public class P_250304_76 {
 		// 값을 입력 받을 스캐너 변수
 		Scanner sc = new Scanner(System.in);
 
-		// x, y, z가 문자열인지 체크할 변수
+		// x, y가 문자열인지 체크할 변수
 		char tmpX;
 		char tmpY;
 
@@ -69,7 +69,7 @@ public class P_250304_76 {
 
 		}
 
-		// 둘다 숫자일 경우에만 값을 곱해서 출력
+		// 둘다 숫자일 경우에만 차이를 구해서 출력
 		if (flagX && flagY == true) {
 
 			int x = Integer.parseInt(strX);

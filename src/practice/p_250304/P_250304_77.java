@@ -31,15 +31,15 @@ public class P_250304_77 {
 		boolean flagY = true;
 		boolean flagZ = true;
 
-		// 첫 번째 값을 입력 받음
+		// 국어점수
 		System.out.printf("국어점수를 입력해주세요. >>>");
 		String strX = sc.nextLine();
 
-		// 두 번째 값을 입력 받음
+		// 영어점수
 		System.out.print("영어점수를 입력해주세요. >>>");
 		String strY = sc.nextLine();
 
-		// 세 번째 값을 입력 받음
+		// 수학점수
 		System.out.print("수학점수를 입력해주세요. >>>");
 		String strZ = sc.nextLine();
 
@@ -88,7 +88,7 @@ public class P_250304_77 {
 
 		}
 
-		// 전부 숫자일 경우에만 값을 곱해서 출력
+		// 전부 숫자일 경우에만 과목의 점수와 평균을 출력
 		if (flagX && flagY && flagZ == true) {
 
 			int x = Integer.parseInt(strX);

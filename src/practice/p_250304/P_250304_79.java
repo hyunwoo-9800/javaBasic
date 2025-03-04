@@ -33,7 +33,7 @@ public class P_250304_79 {
 		System.out.printf("연필을 몇 박스 구매하시겠습니까? >>>");
 		String strX = sc.nextLine();
 		
-		// 가로의 크기
+		// 한 자루 구매 여부
 		System.out.println("연필을 몇 자루 구매하시겠습니까? >>>");
 		String strY = sc.nextLine();
 
@@ -68,7 +68,7 @@ public class P_250304_79 {
 
 		}
 
-		// 전부 숫자일 경우에만 값을 곱해서 출력
+		// 전부 숫자일 경우에만 값을 계산해서 출력
 		if (flagX && flagY == true) {
 
 			int boxPrice = Integer.parseInt(strX);

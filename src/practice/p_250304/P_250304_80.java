@@ -21,26 +21,26 @@ public class P_250304_80 {
 		// TODO Auto-generated method stub
 
 		double pie = 3.141592;
-		double num = (20 * 20 * pie) * 2;
-		double num2 = 30 * 30 * pie;
+		double twoPizza = (20 * 20 * pie) * 2;
+		double onePizza = 30 * 30 * pie;
 		
-		boolean flag = num < num2;
-		
-		flag = false ? false : true;
-		
-		
-		if (flag == false) {
-			
-			System.out.println("20cm 피자 2개를 주문하는게 더 좋아요");
-			
-		} else {
-			
-			System.out.println("30cm 피자 1개를 주문하는게 더 좋아요");
-			
+		System.out.println("20cm 피자 2개의 면적은 " + twoPizza);
+		System.out.println("30cm 피자 1개의 면적은 " + onePizza);
+
+		boolean result = (twoPizza < onePizza) ? true : false;
+
+		if (result == true) {
+
+			System.out.println("30cm 피자 1개를 주문 하는 게 더 좋아요~~");
+
 		}
-		
-		
-		
+
+		if (result == false) {
+
+			System.out.println("20cm 피자 2개를 주문 하는 게 더 좋아요~~");
+
+		}
+
 	} // main 끝
 
 }

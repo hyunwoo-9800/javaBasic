@@ -20,7 +20,7 @@ public class P_250304_74 {
 		// TODO Auto-generated method stub
 
 		// 문자열 입력 받을 변수
-		Scanner scanner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 		// x가 문자열인지 체크할 변수
 		char tmpX;
@@ -30,7 +30,7 @@ public class P_250304_74 {
 
 		// cm를 입력받음
 		System.out.println("구하고 싶은 cm를 입력해주세요.");
-		String strX = scanner.nextLine();
+		String strX = sc.nextLine();
 
 		// 전체 문자열 만큼 반복
 		for (int i = 0; i < strX.length(); i++) {
@@ -68,6 +68,8 @@ public class P_250304_74 {
 			}
 
 		}
+		
+		sc.close();
 
 	} // main 끝
 

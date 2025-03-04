@@ -20,7 +20,7 @@ public class P_250304_75 {
 		// TODO Auto-generated method stub
 
 		// 문자열 입력 받을 변수
-		Scanner scanner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 		// x, y, z가 문자열인지 체크할 변수
 		char tmpX;
@@ -34,15 +34,15 @@ public class P_250304_75 {
 
 		// 세로의 크기
 		System.out.println("윗변의 길이를 입력해 주세요.");
-		String strX = scanner.nextLine();
+		String strX = sc.nextLine();
 
 		// 가로의 크기
 		System.out.println("아래볏의 길이를 입력해주세요.");
-		String strY = scanner.nextLine();
+		String strY = sc.nextLine();
 
 		// 높이
 		System.out.println("높이를 입력해주세요.");
-		String strZ = scanner.nextLine();
+		String strZ = sc.nextLine();
 
 		// 전체 문자열 만큼 반복
 		for (int i = 0; i < strX.length(); i++) {
@@ -102,7 +102,7 @@ public class P_250304_75 {
 
 		}
 
-		scanner.close();
+		sc.close();
 
 	} // main 끝
 

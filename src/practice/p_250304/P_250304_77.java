@@ -104,6 +104,8 @@ public class P_250304_77 {
 			System.out.printf("국어 : %d 영어 : %d 수학: %d 평균 : %f", x, y, z, avg);
 
 		}
+		
+		sc.close();
 
 	} // main 끝
 

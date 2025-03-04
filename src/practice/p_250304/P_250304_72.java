@@ -20,7 +20,7 @@ public class P_250304_72 {
 		// TODO Auto-generated method stub
 
 		// 문자열 입력 받을 변수
-		Scanner scanner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 		// x, y가 문자열인지 체크할 변수
 		char tmpX;
@@ -32,11 +32,11 @@ public class P_250304_72 {
 
 		// 세로의 크기
 		System.out.println("세로의 크기를 입력해 주세요.");
-		String strX = scanner.nextLine();
+		String strX = sc.nextLine();
 
 		// 가로의 크기
 		System.out.println("가로의 크기를 입력해주세요.");
-		String strY = scanner.nextLine();
+		String strY = sc.nextLine();
 
 		// 입력 받은 값 체크
 
@@ -82,7 +82,7 @@ public class P_250304_72 {
 
 		}
 		
-		scanner.close();
+		sc.close();
 
 	} // main 끝
 

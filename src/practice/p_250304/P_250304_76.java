@@ -78,6 +78,8 @@ public class P_250304_76 {
 			System.out.println("두 수의 차이는? " + (x - y));
 
 		}
+		
+		sc.close();
 
 	} // main 끝
 

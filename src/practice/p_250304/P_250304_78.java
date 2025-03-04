@@ -56,6 +56,8 @@ public class P_250304_78 {
 			System.out.printf("입력하신 키는 cm로 %-10.2fcm입니다.", x);
 
 		}
+		
+		sc.close();
 
 	} // main 끝
 

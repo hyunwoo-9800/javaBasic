@@ -82,6 +82,8 @@ public class P_250304_79 {
 			System.out.println("지불하실 금액은 " + (boxPrice + onePrice) + "원 입니다.");
 
 		}
+		
+		sc.close();
 
 	} // main 끝
 

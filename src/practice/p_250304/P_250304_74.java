@@ -51,31 +51,42 @@ public class P_250304_74 {
 		if (flagX == true) {
 
 			// 입력받은 값을 int형으로 변환
+//			int x = Integer.parseInt(strX);
+//
+//			double totalX = x * 0.01;
+//
+//			if (100 <= x) {
+//
+//				// 출력
+//				System.out.println("입력하신 cm는 " + totalX + "m입니다.");
+//
+//			} else {
+//
+//				// 출력
+//				System.out.println("입력하신 cm는 " + x + "cm입니다.");
+//
+//			}
+
+			// 입력받은 값을 int형으로 변환
 			int x = Integer.parseInt(strX);
 
-			double totalX = x * 0.01;
+			// 입력 받은 값의 몫
+			int meter = x / 100;
 
-			if (100 <= x) {
+			// 입력 받은 값의 나머지
+			int cm = x % 100;
 
-				// 출력
-				System.out.println("입력하신 cm는 " + totalX + "m입니다.");
+			// 출력
+			System.out.println("입력하신 키는 " + meter + "m " + +cm + "cm 입니다.");
 
-			} else {
+		} else {
 
-				// 출력
-				System.out.println("입력하신 cm는 " + x + "cm입니다.");
-
-			}
-
-		}  else {
-			
 			System.out.println("숫자로 입력해주세요");
-			
+
 		}
-		
+
 		sc.close();
 
 	} // main 끝
 
-}
-// class 끝
+} // class 끝

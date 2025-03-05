@@ -73,6 +73,7 @@ public class P_250304_76 {
 			int x = Integer.parseInt(strX);
 			int y = Integer.parseInt(strY);
 
+			// 양수로만 출력하기 위함
 			if (x < y) {
 				
 				System.out.println("두 수의 차이는? " + (y - x));

@@ -6,6 +6,8 @@ package ch04.sec04;
 
 /**
  * 
+ * 합계 구하기
+ * 
  */
 public class SumFrom1To100Example {
 

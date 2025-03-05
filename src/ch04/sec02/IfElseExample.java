@@ -16,6 +16,7 @@ public class IfElseExample {
 
 		int score = 85;
 		
+		// score에 따라 실행
 		if (90 <= score) {
 			
 			System.out.println("점수가 90보다 큽니다.");

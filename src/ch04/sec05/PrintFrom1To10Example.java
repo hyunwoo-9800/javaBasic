@@ -5,6 +5,8 @@ package ch04.sec05;
 
 /**
  * 
+ * while 예제
+ * 
  */
 public class PrintFrom1To10Example {
 

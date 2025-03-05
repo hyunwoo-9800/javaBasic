@@ -31,6 +31,7 @@ public class KeyControlExample {
 			
 			String strNum = sc.nextLine();
 			
+			// 입력한 값에 따라 조건을 실행
 			if (strNum.equals("1")) {
 				
 				speed++;

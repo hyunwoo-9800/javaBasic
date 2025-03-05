@@ -20,6 +20,7 @@ public class BreakExample {
 			int num = (int) (Math.random() * 6) + 1;
 			System.out.println(num);
 
+			// 6일 경우
 			if (num == 6) {
 
 				// while문 종료

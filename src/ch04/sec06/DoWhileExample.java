@@ -22,6 +22,7 @@ public class DoWhileExample {
 		Scanner sc = new Scanner(System.in);
 		String inputStr;
 
+		// q를 입력받기 전까지 입력받음
 		do {
 
 			System.out.println(">");

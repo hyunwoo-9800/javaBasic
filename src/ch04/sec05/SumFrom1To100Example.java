@@ -5,6 +5,8 @@ package ch04.sec05;
 
 /**
  * 
+ * while 합계
+ * 
  */
 public class SumFrom1To100Example {
 
@@ -26,8 +28,9 @@ public class SumFrom1To100Example {
 			sum += i;
 			i++;
 			
-		}
+		} // while 종료
 		
+		// 합계 출력
 		System.out.println("1 ~ " + (i - 1) + " 합 = " + sum);
 		
 	} // main 끝

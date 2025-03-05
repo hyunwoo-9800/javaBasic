@@ -17,6 +17,7 @@ public class IfDiceExample {
 		// 1 ~ 6 사이의 랜덤 값 생성
 		int num = (int) (Math.random() * 6) + 1;
 		
+		// 생성된 값에 따라 실행
 		if (num == 1) {
 			
 			System.out.println("1번입니다.");

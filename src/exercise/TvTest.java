@@ -3,12 +3,17 @@ package exercise;
 class Tv {
 
 	// Tv의 멤버변수
-	String color; // 색상
-	boolean power; // 전원
-	int channel; // 채널
+
+	// 색상
+	String color;
+
+	// 전원
+	boolean power;
+
+	// 채널
+	int channel;
 
 	// Tv의 기능
-
 	void power() {
 
 		power = !power;
@@ -27,7 +32,7 @@ class Tv {
 
 	}
 
-}
+} // tv class 끝
 
 public class TvTest {
 
@@ -55,12 +60,12 @@ public class TvTest {
 		System.out.println("t2의 채널 값은 " + t2.channel + " 입니다");
 
 		t2 = t1; // t1의 값을 t2에 저장
-		
+
 		t1.channel = 7;
 		System.out.println("t1의 채널 값을 7로 변경하였습니다.");
 		System.out.println("t1의 채널 값은 " + t1.channel + " 입니다");
 		System.out.println("t2의 채널 값은 " + t2.channel + " 입니다");
 
-	}
+	} // main 끝
 
-}
+} // TvTest class 끝

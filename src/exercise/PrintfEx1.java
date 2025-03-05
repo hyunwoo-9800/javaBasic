@@ -29,6 +29,6 @@ public class PrintfEx1 {
 		System.out.printf("hexNum = %x, %d%n", hexNum, hexNum);
 		System.out.printf("bigNum = %s, %d%n", Integer.toBinaryString(bigNum), bigNum);
 		
-	}
+	} // main 끝
 
-}
+} // class 끝

@@ -15,13 +15,22 @@ public class FlowEx17 {
 		String tmp = sc.nextLine();
 		num = Integer.parseInt(tmp);
 
+		// 입력한 숫자 만큼 반복
 		for (int i = 0; i < num; i++) {
+			
+			// 입력한 숫자 만큼 * 출력
 			for (int j = 0; j <= i; j++) {
+				
 				System.out.print("*");
+				
 			} // for 끝
+			
 			System.out.println();
+			
 		} // for 끝
 
+		sc.close();
+		
 	} // main 끝
 
-}
+} // class 끝

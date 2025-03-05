@@ -7,6 +7,6 @@ public class Test {
 
 		System.out.println("Hello World!");
 		
-	}
+	} // main 끝
 
-}
+} // class 끝

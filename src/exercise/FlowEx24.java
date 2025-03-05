@@ -26,4 +26,4 @@ public class FlowEx24 {
 		
 	} // main 끝
 
-}
+} // class 끝

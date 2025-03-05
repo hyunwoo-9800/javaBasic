@@ -18,6 +18,6 @@ public class StringEx {
 		System.out.println(7 + 7 + "");
 		System.out.println("" + 7 + 7);
 		
-	}
+	} // main 끝
 
-}
+} // class 끝

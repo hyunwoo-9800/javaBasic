@@ -13,7 +13,7 @@ public class FlowEx12 {
 		} // for 끝
 
 		System.out.println();
-		
+
 		// i의 값을 가로로 출력
 		for (int i = 1; i <= 5; i++) {
 
@@ -23,4 +23,4 @@ public class FlowEx12 {
 
 	} // main 끝
 
-}
+} // class 끝

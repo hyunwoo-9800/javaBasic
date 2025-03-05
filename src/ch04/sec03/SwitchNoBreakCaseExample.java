@@ -16,6 +16,8 @@ public class SwitchNoBreakCaseExample {
 
 		// 8 ~ 11 사이의 랜덤 값 생성
 		int num = (int) (Math.random() * 4) + 8;
+		
+		System.out.println("현재 시간은 " + num + "시입니다.");
 
 		switch (num) {
 

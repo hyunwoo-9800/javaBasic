@@ -32,21 +32,18 @@ public class P_250304_80 {
 		// 피자 2개의 면적 < 피자 1개의 면적 일 경우 true
 		boolean result = (twoPizza < onePizza) ? true : false;
 
-		// 피자 2개가 피자 1개보다 양이 작을 때
-		if (result == true) {
+		if (result) {
 
+			// 피자 2개가 피자 1개보다 양이 작을 때
 			System.out.println("30cm 피자 1개를 주문 하는 게 더 좋아요~~");
 
-		}
+		} else {
 
-		// 피자 1개가 피자 2개보다 양이 작을 때
-		if (result == false) {
-
+			// 피자 1개가 피자 2개보다 양이 작을 때
 			System.out.println("20cm 피자 2개를 주문 하는 게 더 좋아요~~");
 
 		}
 
 	} // main 끝
 
-}
-// class 끝
+} // class 끝

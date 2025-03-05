@@ -28,7 +28,7 @@ public class P_250304_78 {
 		boolean flagX = true;
 
 		// 키를 입력받음
-		System.out.printf("키를 입력해주세요(m단위로) >>>");
+		System.out.println("키를 입력해주세요(m단위로) >>>");
 		String strX = sc.nextLine();
 
 		// 전체 문자열 만큼 반복
@@ -38,7 +38,7 @@ public class P_250304_78 {
 			tmpX = strX.charAt(i);
 
 			// 문자열이 포함되었다면 숫자가 아님
-			if (Character.isDigit(tmpX) == false) {
+			if (!Character.isDigit(tmpX)) {
 
 				flagX = false;
 
@@ -47,11 +47,11 @@ public class P_250304_78 {
 		}
 
 		// 숫자일 계산해서 출력
-		if (flagX == true) {
+		if (flagX) {
 
 			double x = Double.parseDouble(strX);
 
-			System.out.printf("입력하신 키는 cm로 %-10.2fcm입니다.", x);
+			System.out.printf("입력하신 키는 cm로 %-10.2f cm입니다.", x);
 
 		} else {
 			
@@ -63,5 +63,4 @@ public class P_250304_78 {
 
 	} // main 끝
 
-}
-// class 끝
+} // class 끝

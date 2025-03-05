@@ -32,15 +32,15 @@ public class P_250304_77 {
 		boolean flagZ = true;
 
 		// 국어점수
-		System.out.printf("국어점수를 입력해주세요. >>>");
+		System.out.println("국어점수를 입력해주세요. >>>");
 		String strX = sc.nextLine();
 
 		// 영어점수
-		System.out.print("영어점수를 입력해주세요. >>>");
+		System.out.println("영어점수를 입력해주세요. >>>");
 		String strY = sc.nextLine();
 
 		// 수학점수
-		System.out.print("수학점수를 입력해주세요. >>>");
+		System.out.println("수학점수를 입력해주세요. >>>");
 		String strZ = sc.nextLine();
 
 		// 전체 문자열 만큼 반복
@@ -50,7 +50,7 @@ public class P_250304_77 {
 			tmpX = strX.charAt(i);
 
 			// 문자열이 포함되었다면 숫자가 아님
-			if (Character.isDigit(tmpX) == false) {
+			if (!Character.isDigit(tmpX)) {
 
 				flagX = false;
 
@@ -65,7 +65,7 @@ public class P_250304_77 {
 			tmpY = strY.charAt(i);
 
 			// 문자열이 포함되었다면 숫자가 아님
-			if (Character.isDigit(tmpY) == false) {
+			if (!Character.isDigit(tmpY)) {
 
 				flagY = false;
 
@@ -80,7 +80,7 @@ public class P_250304_77 {
 			tmpZ = strZ.charAt(i);
 
 			// 문자열이 포함되었다면 숫자가 아님
-			if (Character.isDigit(tmpZ) == false) {
+			if (!Character.isDigit(tmpZ)) {
 
 				flagZ = false;
 
@@ -89,17 +89,20 @@ public class P_250304_77 {
 		}
 
 		// 전부 숫자일 경우에만 과목의 점수와 평균을 출력
-		if (flagX && flagY && flagZ == true) {
+		if (flagX && flagY && flagZ) {
 
 			int x = Integer.parseInt(strX);
 			int y = Integer.parseInt(strY);
 			int z = Integer.parseInt(strZ);
 
+			// 총첨
 			int sum = x + y + z;
 
+			// 평균
 			double avg = sum / 3;
 
-			System.out.printf("국어 : %d 영어 : %d 수학: %d 평균 : %f", x, y, z, avg);
+			// 소수점을 없애기 위해 printf 사용
+			System.out.printf("국어 : %d 영어 : %d 수학: %d 평균 : %-10.0f", x, y, z, avg);
 
 		}  else {
 			

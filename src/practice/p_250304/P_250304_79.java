@@ -30,7 +30,7 @@ public class P_250304_79 {
 		boolean flagY = true;
 
 		// 박스 구매 여부
-		System.out.printf("연필을 몇 박스 구매하시겠습니까? >>>");
+		System.out.println("연필을 몇 박스 구매하시겠습니까? >>>");
 		String strX = sc.nextLine();
 		
 		// 한 자루 구매 여부
@@ -45,7 +45,7 @@ public class P_250304_79 {
 			tmpX = strX.charAt(i);
 
 			// 문자열이 포함되었다면 숫자가 아님
-			if (Character.isDigit(tmpX) == false) {
+			if (!Character.isDigit(tmpX)) {
 
 				flagX = false;
 
@@ -60,7 +60,7 @@ public class P_250304_79 {
 			tmpY = strY.charAt(i);
 
 			// 문자열이 포함되었다면 숫자가 아님
-			if (Character.isDigit(tmpY) == false) {
+			if (!Character.isDigit(tmpY)) {
 
 				flagY = false;
 
@@ -69,7 +69,7 @@ public class P_250304_79 {
 		}
 
 		// 전부 숫자일 경우에만 값을 계산해서 출력
-		if (flagX && flagY == true) {
+		if (flagX && flagY) {
 
 			int boxPrice = Integer.parseInt(strX);
 			int onePrice = Integer.parseInt(strY);
@@ -89,5 +89,4 @@ public class P_250304_79 {
 
 	} // main 끝
 
-}
-// class 끝
+} // class 끝

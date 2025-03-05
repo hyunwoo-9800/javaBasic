@@ -4,8 +4,6 @@
 package practice.p_250304;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * 
@@ -32,11 +30,11 @@ public class P_250304_76 {
 		boolean flagY = true;
 
 		// 첫 번째 값을 입력 받음
-		System.out.printf("첫 번째 값을 입력해주세요. >>>");
+		System.out.println("첫 번째 값을 입력해주세요. >>>");
 		String strX = sc.nextLine();
 
 		// 두 번째 값을 입력 받음
-		System.out.print("두 번째 값을 입력해주세요. >>>");
+		System.out.println("두 번째 값을 입력해주세요. >>>");
 		String strY = sc.nextLine();
 
 		// 전체 문자열 만큼 반복
@@ -46,7 +44,7 @@ public class P_250304_76 {
 			tmpX = strX.charAt(i);
 
 			// 문자열이 포함되었다면 숫자가 아님
-			if (Character.isDigit(tmpX) == false) {
+			if (!Character.isDigit(tmpX)) {
 
 				flagX = false;
 
@@ -61,7 +59,7 @@ public class P_250304_76 {
 			tmpY = strY.charAt(i);
 
 			// 문자열이 포함되었다면 숫자가 아님
-			if (Character.isDigit(tmpY) == false) {
+			if (!Character.isDigit(tmpY)) {
 
 				flagY = false;
 
@@ -70,12 +68,27 @@ public class P_250304_76 {
 		}
 
 		// 둘다 숫자일 경우에만 차이를 구해서 출력
-		if (flagX && flagY == true) {
+		if (flagX && flagY) {
 
 			int x = Integer.parseInt(strX);
 			int y = Integer.parseInt(strY);
 
-			System.out.println("두 수의 차이는? " + (x - y));
+			if (x < y) {
+				
+				System.out.println("두 수의 차이는? " + (y - x));
+				
+			} else if (y < x) {
+				
+				
+				System.out.println("두 수의 차이는? " + (x - y));
+				
+			} else if (x == y) {
+				
+				
+				System.out.println("두 수의 차이는? " + (x - y));
+				
+			}
+			
 
 		}  else {
 			
@@ -87,5 +100,4 @@ public class P_250304_76 {
 
 	} // main 끝
 
-}
-// class 끝
+}// class 끝

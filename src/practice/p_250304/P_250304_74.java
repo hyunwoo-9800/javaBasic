@@ -4,7 +4,6 @@
 package practice.p_250304;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
 
 /**
  * 
@@ -39,7 +38,7 @@ public class P_250304_74 {
 			tmpX = strX.charAt(i);
 
 			// 문자열이 포함되었다면 숫자가 아님
-			if (Character.isDigit(tmpX) == false) {
+			if (!Character.isDigit(tmpX)) {
 
 				flagX = false;
 
@@ -48,7 +47,7 @@ public class P_250304_74 {
 		}
 
 		// 숫자일 경우에만 값을 곱해서 출력
-		if (flagX == true) {
+		if (flagX) {
 
 			// 입력받은 값을 int형으로 변환
 //			int x = Integer.parseInt(strX);

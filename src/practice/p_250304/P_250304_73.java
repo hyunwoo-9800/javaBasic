@@ -50,7 +50,7 @@ public class P_250304_73 {
 			tmpX = strX.charAt(i);
 
 			// 문자열이 포함되었다면 숫자가 아님
-			if (Character.isDigit(tmpX) == false) {
+			if (!Character.isDigit(tmpX)) {
 
 				flagX = false;
 
@@ -65,7 +65,7 @@ public class P_250304_73 {
 			tmpY = strY.charAt(i);
 
 			// 문자열이 포함되었다면 숫자가 아님
-			if (Character.isDigit(tmpY) == false) {
+			if (!Character.isDigit(tmpY)) {
 
 				flagY = false;
 
@@ -80,7 +80,7 @@ public class P_250304_73 {
 			tmpZ = strZ.charAt(i);
 
 			// 문자열이 포함되었다면 숫자가 아님
-			if (Character.isDigit(tmpZ) == false) {
+			if (!Character.isDigit(tmpZ)) {
 
 				flagZ = false;
 
@@ -89,7 +89,7 @@ public class P_250304_73 {
 		}
 
 		// 전부 숫자일 경우에만 값을 곱해서 출력
-		if (flagX && flagY && flagZ == true) {
+		if (flagX && flagY && flagZ) {
 
 			// 입력받은 값을 int형으로 변환
 			int x = Integer.parseInt(strX);

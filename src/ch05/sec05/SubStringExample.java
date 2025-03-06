@@ -16,11 +16,11 @@ public class SubStringExample {
 
 		// 문자열 선언
 		String ssn = "990221 - 1234567";
-		
+
 		// 문자열 자르기
-		String firstNum = ssn.substring(0 , 7);
+		String firstNum = ssn.substring(0, 7);
 		String secondNum = ssn.substring(9);
-		
+
 		System.out.println(firstNum);
 		System.out.println(secondNum);
 

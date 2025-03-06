@@ -24,9 +24,9 @@ public class P_250306_4 {
 
 			// 합계 변수에 배열의 값을 저장
 			sum += iArr[i];
-			
+
 		} // for 종료
-		
+
 		System.out.println("배열의 총합은 = " + sum);
 
 	} // main 끝

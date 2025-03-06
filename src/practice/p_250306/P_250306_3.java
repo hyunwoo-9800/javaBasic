@@ -23,7 +23,7 @@ public class P_250306_3 {
 		for (int i = 0; i < iArr.length; i++) {
 
 			iArr[i] += cnt;
-			
+
 			// 돌때마다 1씩 증가
 			cnt++;
 
@@ -33,7 +33,7 @@ public class P_250306_3 {
 				System.out.println("iArr[" + i + "] = " + iArr[i]);
 
 			} // if 종료
-			
+
 			// 0번 인덱스를 제외하고 싶다면 사용
 //			if (i % 2 == 0 && i != 0) {
 //				

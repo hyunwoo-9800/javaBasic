@@ -82,7 +82,7 @@ public class ArrayCreateByValueListExample1 {
 		for (int i = 0; i < arr1.length; i++) {
 
 			arr1[i] = i;
-			System.out.println("arr[" + i + "] = "+ arr1[i]);
+			System.out.println("arr[" + i + "] = " + arr1[i]);
 
 		}
 
@@ -94,15 +94,15 @@ public class ArrayCreateByValueListExample1 {
 		double[] dArr;
 
 		// 배열선언
-		dArr = new double[3]; 
+		dArr = new double[3];
 		dArr[0] = 0.1d;
 		dArr[1] = 0.3d;
 		dArr[2] = 0.5d;
-		
+
 		// 배열 값 출력
 		for (int i = 0; i < dArr.length; i++) {
 
-			System.out.println("dArr[" + i + "] = "+dArr[i]);
+			System.out.println("dArr[" + i + "] = " + dArr[i]);
 
 		}
 
@@ -118,7 +118,7 @@ public class ArrayCreateByValueListExample1 {
 
 		for (int i = 0; i < strArr.length; i++) {
 
-			System.out.println("strArr[" + i + "] = "+ strArr[i]);
+			System.out.println("strArr[" + i + "] = " + strArr[i]);
 
 		}
 

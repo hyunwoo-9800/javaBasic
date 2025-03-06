@@ -43,6 +43,6 @@ public class P_250306_3 {
 
 		} // for 종료
 
-	} // main 종료
+	} // main 끝
 
-} // class 종료
+} // class 끝

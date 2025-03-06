@@ -29,6 +29,6 @@ public class P_250306_4 {
 		
 		System.out.println("배열의 총합은 = " + sum);
 
-	} // main 종료
+	} // main 끝
 
-} // class 종료
+} // class 끝

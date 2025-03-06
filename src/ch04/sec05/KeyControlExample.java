@@ -49,6 +49,7 @@ public class KeyControlExample {
 			}
 			
 			System.out.println("시스템 종료");
+			sc.close();
 			
 		} // while 종료
 		

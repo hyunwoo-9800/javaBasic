@@ -21,7 +21,6 @@ public class ReplaceExample {
 		System.out.println(oldStr);
 		System.out.println(newStr);
 	
-
 	} // main 끝
 
 } // class 끝

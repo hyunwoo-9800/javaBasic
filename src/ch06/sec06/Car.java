@@ -7,4 +7,9 @@ public class Car {
 	boolean start;
 	int speed;
 	
+	// default 생성자
+	public Car() {
+		
+	}
+	
 } // class 끝

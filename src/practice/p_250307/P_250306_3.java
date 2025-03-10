@@ -24,7 +24,7 @@ public class P_250306_3 {
 
 		// 문자열이 숫자인지 아닌지 판별하기 위한 플래그
 		boolean flag = true;
-		
+
 		String strUserTmp = "";
 		String strCumTmp = "";
 
@@ -38,49 +38,49 @@ public class P_250306_3 {
 
 			check = tmp.charAt(i);
 
-			if (Character.isDigit(check) == false) {
+			if (!Character.isDigit(check)) {
 
 				flag = false;
-				sc.close();
+
 			}
 
 		} // for 끝
 
 		// 입력한 문자가 숫자일 경우
-		if (flag == true) {
+		if (flag) {
 
 			// 사용자가 입력한 값
 			user = Integer.parseInt(tmp);
 
 			// 0, 1, 2중 하나가 저장됨
 			cum = (int) (Math.random() * 3);
-			
+
 			if (user == 0) {
-				
+
 				strUserTmp = "가위";
-				
+
 			} else if (user == 1) {
-				
+
 				strUserTmp = "바위";
-				
+
 			} else {
-				
+
 				strUserTmp = "보";
 			}
-			
+
 			if (cum == 0) {
-				
+
 				strCumTmp = "가위";
-				
+
 			} else if (cum == 1) {
-				
+
 				strCumTmp = "바위";
-				
+
 			} else {
-				
+
 				strCumTmp = "보";
 			}
-			
+
 			// 입력한 값이 0 ~ 2 일경우
 			if (-1 < user && user < 3) {
 
@@ -116,7 +116,7 @@ public class P_250306_3 {
 			System.out.println("숫자로 입력해주세요");
 
 		} // if - else 끝
-		
+
 		sc.close();
 
 	} // main 끝

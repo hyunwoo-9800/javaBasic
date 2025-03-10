@@ -37,10 +37,10 @@ public class BaseBallGame {
 
 		// 타자 카운트
 		int batterCnt = 0;
-		
+
 		// 타석수 배열
 		int[] batArr = new int[9];
-		
+
 		// 안타수 배열
 		int[] hitsArr = new int[9];
 
@@ -65,7 +65,7 @@ public class BaseBallGame {
 
 		System.out.println("게임을 시작합니다.");
 		System.out.println();
-		
+
 		// 게임 시작
 		do {
 
@@ -77,11 +77,11 @@ public class BaseBallGame {
 
 			// 타석수가 0보다 클 경우만 타율을 계산
 			if (0 < batArr[batterCnt]) {
-				
+
 				battingAvg = hitsArr[batterCnt] / batArr[batterCnt];
-				
+
 			}
-			
+
 			System.out.println("===============================================");
 			System.out.println("타순 = " + (batterCnt + 1) + "번 타자");
 			System.out.println("타자명 = " + batterArr[batterCnt]);
@@ -98,104 +98,113 @@ public class BaseBallGame {
 			user = Integer.parseInt(sc.nextLine());
 			cum = (int) (Math.random() * 9) + 1;
 
-			// 회차 확인용
-			boolean gameCheck = false;
-			gameCnt = 1;
+			if (0 < user && user < 11) {
 
-			while (!gameCheck) {
+				// 회차 확인용
+				boolean gameCheck = false;
+				gameCnt = 1;
 
-				// 3회차일 경우
-				if (gameCnt == 3) {
+				while (!gameCheck) {
 
-					gameCnt++;
-					gameCheck = true;
-					break;
+					// 3회차일 경우
+					if (gameCnt == 3) {
+
+						gameCnt++;
+						gameCheck = true;
+						break;
+
+					}
+
+					// 안타일 경우
+					if (user == cum) {
+
+						System.out.println("안타");
+
+						// 게임 카운트 증가
+						gameCnt++;
+
+						// 타석수 증가
+						batArr[batterCnt] += 1;
+
+						hitsArr[batterCnt] += 1;
+
+						// 다음 타자로
+						batterCnt++;
+						break;
+
+					} else {
+
+						// 아웃일 경우
+						System.out.println("아웃");
+
+						// 타석수 증가
+						batArr[batterCnt] += 1;
+
+						// 아웃 카운트 증가
+						outCnt++;
+
+						// 게임 카운트 증가
+						gameCnt++;
+
+						// 다음 타자로
+						batterCnt++;
+						break;
+
+					}
 
 				}
 
-				// 안타일 경우
-				if (user == cum) {
-
-					System.out.println("안타");
-
-					// 게임 카운트 증가
-					gameCnt++;
-					
-					// 타석수 증가
-					batArr[batterCnt] += 1;
-					
-					hitsArr[batterCnt] += 1;
-					
-					// 다음 타자로
-					batterCnt++;
-					break;
-
-				} else {
-
-					// 아웃일 경우
-					System.out.println("아웃");
-
-					// 타석수 증가
-					batArr[batterCnt] += 1;
-					
-					// 아웃 카운트 증가
-					outCnt++;
-
-					// 게임 카운트 증가
-					gameCnt++;
-
-					// 다음 타자로
-					batterCnt++;
-					break;
-
-				}
-
-			}
-
-			System.out.println();
-			
-			// 3아웃일 경우 1회 종료
-			if (outCnt == 3) {
-
-				System.out.println("===============================================");
-				System.out.println("1회 종료");
-				System.out.println("===============================================");
 				System.out.println();
 
-			}
+				// 3아웃일 경우 1회 종료
+				if (outCnt == 3) {
 
-			// 2아웃일 경우 2회 종료
-			if (outCnt == 6) {
-
-				System.out.println("===============================================");
-				System.out.println("2회 종료");
-				System.out.println("===============================================");
-				System.out.println();
-
-			}
-
-			// 3아웃일 경우
-			if (outCnt == 9) {
-
-				System.out.println("더 하시려면 'yes'를 입력해주세요.");
-				String str = sc.nextLine();
-
-				// yes를 입력하면
-				if (str.contains("yes")) {
-
-					// 게임 시작
-					check = false;
-
-					// 아웃카운트, 게임카운트, 타자 카운트 초기화
-					outCnt = 0;
-					gameCnt = 1;
-					batterCnt = 0;
-
-				} else {
-
-					check = true;
+					System.out.println("===============================================");
+					System.out.println("1회 종료");
+					System.out.println("===============================================");
+					System.out.println();
 
 				}
+
+				// 2아웃일 경우 2회 종료
+				if (outCnt == 6) {
+
+					System.out.println("===============================================");
+					System.out.println("2회 종료");
+					System.out.println("===============================================");
+					System.out.println();
+
+				}
+
+				// 3아웃일 경우
+				if (outCnt == 9) {
+
+					System.out.println("더 하시려면 'yes'를 입력해주세요.");
+					String str = sc.nextLine();
+
+					// yes를 입력하면
+					if (str.contains("yes")) {
+
+						// 게임 시작
+						check = false;
+
+						// 아웃카운트, 게임카운트, 타자 카운트 초기화
+						outCnt = 0;
+						gameCnt = 1;
+						batterCnt = 0;
+
+					} else {
+
+						check = true;
+
+					}
+
+				}
+
+			} else {
+
+				System.out.println("숫자로 입력해주세요");
+				continue;
 
 			}
 
@@ -204,7 +213,7 @@ public class BaseBallGame {
 		System.out.println("===============================================");
 		System.out.println("게임종료");
 		System.out.println("===============================================");
-		
+
 		// 스캐너 함수 종료
 		sc.close();
 

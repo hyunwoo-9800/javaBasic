@@ -6,7 +6,7 @@ package practice.p_250310;
 /**
  * 
  */
-public class P_250310_2 {
+public class P_250310_02 {
 
 	/**
 	 * @param args

@@ -23,7 +23,7 @@ public class KoreanExample {
 		System.out.println("k1 ssn = " + k1.ssn);
 		System.out.println();
 		
-		// 인스턴스
+		// 인스턴스화
 		Korean k2 = new Korean("바보", "123456-9999999");
 		
 		// 출력
@@ -32,7 +32,7 @@ public class KoreanExample {
 		System.out.println("k2 ssn = " + k2.ssn);
 		System.out.println();
 		
-		// 인스턴스
+		// 인스턴스화
 		Korean k3 = new Korean("누구");
 		
 		// 출력

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package javaTest01;
+package javaTest;
 
 import java.util.Scanner;
 

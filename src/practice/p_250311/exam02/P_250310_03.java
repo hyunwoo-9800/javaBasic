@@ -26,16 +26,11 @@ public class P_250310_03 {
 		// 정렬
 		sort(score);
 
-		// 배열의 첫번째 값과 마지막 값을 가져옴
-		for (int i = 0; i < score.length; i++) {
+		// 첫번째 값은 최소값
+		maxValue = score[0];
 
-			// 첫번째 값은 최소값
-			maxValue = score[0];
-			
-			// 마지막 값은 최대값
-			minValue = score[score.length - 1];
-
-		}
+		// 마지막 값은 최대값
+		minValue = score[score.length - 1];
 
 		System.out.println("최대값은? " + maxValue);
 		System.out.println("최소값은? " + minValue);
@@ -50,27 +45,26 @@ public class P_250310_03 {
 		}
 
 	} // main 끝
-	
 
 	// 정렬용 메서드
 	public static void sort(int[] arr) {
-		
+
 		for (int i = 1; i < arr.length; i++) {
-			
+
 			int tmp = arr[i];
 			int j = i - 1;
-			
+
 			while (0 <= j && tmp < arr[j]) {
-				
+
 				arr[j + 1] = arr[j];
 				j--;
-				
+
 			} // while 종료
-			
+
 			arr[j + 1] = tmp;
-			
+
 		} // for 종료
-		
+
 	} // 메서드 종료
 
 } // class 끝

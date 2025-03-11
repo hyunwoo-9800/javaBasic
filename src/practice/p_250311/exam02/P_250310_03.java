@@ -29,10 +29,10 @@ public class P_250310_03 {
 		// 배열의 첫번째 값과 마지막 값을 가져옴
 		for (int i = 0; i < score.length; i++) {
 
-			// 첫번째 값은 최대값
+			// 첫번째 값은 최소값
 			maxValue = score[0];
 			
-			// 마지막 값은 최소값
+			// 마지막 값은 최대값
 			minValue = score[score.length - 1];
 
 		}

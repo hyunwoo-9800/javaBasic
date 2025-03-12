@@ -3,6 +3,8 @@
  */
 package practice.p_250311.exam02;
 
+import java.util.Arrays;
+
 /**
  * 
  */
@@ -22,6 +24,9 @@ public class P_250310_03 {
 
 		// 최소값
 		int minValue = 0;
+		
+		// 컬렉션리스트를 이용한 정렬
+//		Arrays.sort(score);
 
 		// 정렬
 		sort(score);

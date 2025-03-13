@@ -22,7 +22,7 @@ public class BoxExample {
 		int height = box.height;
 
 		// 메서드 호출
-		double result = box.area(width, length, height);
+		double result = box.boxVolume(width, length, height);
 
 		// 출력
 		System.out.println("상자의 가로,세로,높이는 " + width + ", " + length + ", " + height + "입니다.");

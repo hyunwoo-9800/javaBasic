@@ -35,7 +35,7 @@ public class Box {
 	}
 	
 	// 부피를 구하는 메서드
-	double area(int width, int length, int height) {
+	double boxVolume(int width, int length, int height) {
 		
 		double result = (double) width * (double) length * (double) height;
 

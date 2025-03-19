@@ -6,7 +6,7 @@ package thisisjava.ch06.sec13.exam03.package2;
 import thisisjava.ch06.sec13.exam03.package1.*;
 
 /**
- * 
+ * 접근 제어자
  */
 public class C {
 

@@ -284,11 +284,11 @@ public class BaseBallGame2 {
 
 				}
 
-			}
+			} // for 종료
 
 			return flag;
 
-		}
+		} // 입력 값 검증 if 종료
 
 		return flag;
 

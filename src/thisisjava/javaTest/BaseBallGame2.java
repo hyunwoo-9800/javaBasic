@@ -22,8 +22,6 @@ public class BaseBallGame2 {
 
 		int[] bat = new int[9]; 								// 타석수 저장용 배열
 		int[] hit = new int[9]; 								// 안타수 저장용 배열
-		int batCnt = 0; 										// 타석수 증가용
-		int hitCnt = 0; 										// 안타수 증가용
 
 		int user = 0; 											// 사용자 입력 값
 		int com = 0; 											// 컴퓨터 랜덤 값
@@ -87,14 +85,8 @@ public class BaseBallGame2 {
 				System.out.println();
 				System.out.println();
 
-				hitCnt++; 												// 안타 수 증가
-				hit[batterCnt] = hitCnt + hit[batterCnt]; 				// 안타를 친 선수의 안타 배열에 안타 저장
-				hitCnt = 0; 											// 안타 수 초기화
-
-				batCnt++; 												// 타석 수 증가
-				bat[batterCnt] = batCnt + bat[batterCnt]; 				// 타석에 올라온 선수의 배열에 타석수 증가
-				batCnt = 0; 											// 타석 수 초기화
-
+				hit[batterCnt] += 1; 									// 안타를 친 선수의 안타 배열에 안타 저장
+				bat[batterCnt] += 1; 									// 타석에 올라온 선수의 배열에 타석수 증가
 				batterCnt++; 											// 다음 선수로
 
 				// 9명의 선수가 전부 타석에 올랐다면 처음 선수를 부르기 위해 초기화
@@ -119,9 +111,7 @@ public class BaseBallGame2 {
 				System.out.println();
 				System.out.println();
 
-				batCnt++; 												// 타석 수 증가
-				bat[batterCnt] = batCnt + bat[batterCnt]; 				// 타석에 올라온 선수의 배열에 타석수 증가
-				batCnt = 0; 											// 타석 수 초기화
+				bat[batterCnt] += 1;									// 타석에 올라온 선수의 배열에 타석수 증가
 
 				outCnt++; 												// 아웃 카운트 증가
 				batterCnt++; 											// 다음 선수로

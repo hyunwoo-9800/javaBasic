@@ -65,11 +65,13 @@ public class BaseBallGame2 {
 			if (flag) {
 
 				System.out.println("입력값은 0 ~ 10까지의 숫자로 입력해주세요.");
+				System.out.println();
+				System.out.println();
+				System.out.println();
 				continue;
 
 			}
 
-			user = Integer.parseInt(checkStr);							// 사용자 입력 값
 
 			// 안타 여부 확인
 			if (user == com) {
@@ -253,7 +255,6 @@ public class BaseBallGame2 {
 		} else if (count == 1) {
 		  // 입력 값 검증인 경우
 			
-			// 전체 문자열 만큼 반복
 			for (int i = 0; i < userX.length(); i++) {
 
 				
@@ -275,6 +276,19 @@ public class BaseBallGame2 {
 				}
 
 			} // for 종료
+			
+			// 입력 값이 1 ~ 10 사이의 값이 아닐 경우
+			if (!flag) {
+				
+				int user = Integer.parseInt(userX);
+				
+				if (user < 0 || 11 < user) {
+					
+					flag = true;
+
+				}
+				
+			}
 
 			return flag;
 

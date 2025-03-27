@@ -9,13 +9,15 @@ public class InstanceofExample {
 		person.walk();
 
 		// person이 참조하는 객체가 Student 타입인지 확인
-//		if (person instanceof Student) {
-//
-//			Student student = (Student) person;
-//			System.out.println("studentNo = " + student.studentNo);
-//			student.study();
-//
-//		}
+		if (person instanceof Student) {
+			
+			System.out.println("Java11버전 이하이면 지금과 같이 하면 됩니다========");
+
+			Student student = (Student) person;
+			System.out.println("studentNo = " + student.studentNo);
+			student.study();
+
+		}
 
 		// person이 참조하는 객체가 Student 타입인 경우
 		// 자바12 부터 사용 가능
@@ -23,6 +25,10 @@ public class InstanceofExample {
 
 			System.out.println("studentNo = " + student.studentNo);
 			student.study();
+
+		} else {
+
+			System.out.println("학생이 아니라서 번호가 없습니다.");
 
 		}
 

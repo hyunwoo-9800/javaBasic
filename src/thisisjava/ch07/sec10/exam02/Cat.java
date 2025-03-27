@@ -2,6 +2,7 @@ package thisisjava.ch07.sec10.exam02;
 
 public class Cat extends Animal {
 
+	// default 생성자
 	public Cat() {
 		// TODO Auto-generated constructor stub
 	}

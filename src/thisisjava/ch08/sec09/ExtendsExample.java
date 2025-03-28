@@ -10,11 +10,13 @@ public class ExtendsExample {
 		InterfaceA ia = impl;
 		ia.methodA();
 //		ia.methodB(); InterfaceA 와 InterfaceB는 아무 관계도 아니기에 호출 불가
+//		ia.methodC();
 		System.out.println();
 
 		InterfaceB ib = impl;
-//		ib.methodA(); InterfaceA 와 InterfaceB는 아무 관계도 아니기에 호출 불가
+//		ib.methodA(); InterfaceB 와 InterfaceA는 아무 관계도 아니기에 호출 불가
 		ib.methodB();
+//		ib.methodC();
 		System.out.println();
 
 //		InterfaceC는 InterfaceA 와 InterfaceB를 상속받아서 모두 호출 가능

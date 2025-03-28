@@ -12,14 +12,14 @@ public class SamrtTelevision implements RemoteControl, Searchable {
 	public void turnOn() {
 		// TODO Auto-generated method stub
 
-		System.out.println("TV를 켭니다.");
+		System.out.println("Samrt TV를 켭니다.");
 	}
 
 	@Override
 	public void turnOff() {
 		// TODO Auto-generated method stub
 
-		System.out.println("TV를 끕니다.");
+		System.out.println("Samrt TV를 끕니다.");
 
 	}
 

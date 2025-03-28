@@ -40,7 +40,7 @@ public interface Service {
 
 	}
 
-	// private 메서드
+	// private 정적 메서드
 	private static void staticCommon() {
 
 		System.out.println("staticMethod 중복코드 C");

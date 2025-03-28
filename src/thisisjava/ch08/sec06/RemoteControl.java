@@ -20,7 +20,7 @@ public interface RemoteControl {
 		if (mute) {
 
 			System.out.println("무음 처리합니다.");
-			setVolume(MIN_VOLUME);
+			setVolume(0);
 
 		} else {
 

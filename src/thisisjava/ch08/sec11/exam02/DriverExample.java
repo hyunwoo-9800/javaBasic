@@ -13,8 +13,8 @@ public class DriverExample {
 		Taxi taxi = new Taxi();
 
 		// 매개변수의 다형성
-		driver.ddrive(bus);
-		driver.ddrive(taxi);
+		driver.drive(bus);
+		driver.drive(taxi);
 
 	} // main 끝
 

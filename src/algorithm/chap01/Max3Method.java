@@ -6,7 +6,7 @@ package algorithm.chap01;
 /**
  * 3개의 정숫값 가운데 최댓값을 구하는 메서드
  */
-public class MAx3Method {
+public class Max3Method {
 
 	// 최댓값 반환 메서드
 	static int max3(int a, int b, int c) {

@@ -9,7 +9,7 @@ import java.util.Scanner;
 /**
  * 
  */
-public class Test2 {
+public class Test02 {
 	/**
 	 * @param args
 	 */

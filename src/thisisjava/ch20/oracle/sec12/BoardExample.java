@@ -170,7 +170,7 @@ public class BoardExample {
 		// 테이블에서 해당하는 게시물 가져오기
 		try {
 
-			String sql = "SELECT row_number() over (order by bdate) as no, btitle, bcontent, bwriter, bdate FROM boards WHERE bno = ?";
+			String sql = "SELECT bno, row_number() over (order by bdate) as no, btitle, bcontent, bwriter, bdate FROM boards WHERE bno = ?";
 			String sql2 = "SELECT bno FROM (SELECT rownum as num, boards.* FROM boards) WHERE num = ?";
 			PreparedStatement ps2 = con.prepareStatement(sql2);
 			ps2.setInt(1, no);
@@ -187,7 +187,7 @@ public class BoardExample {
 				if (rs.next()) {
 
 					Board board = new Board();
-//					board.setBno(rs.getInt("bno"));
+					board.setBno(rs.getInt("bno"));
 					board.setBoardNum(rs.getInt("no"));
 					board.setBtitle(rs.getString("btitle"));
 					board.setBcontent(rs.getString("bcontent"));

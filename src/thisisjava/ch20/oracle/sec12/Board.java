@@ -1,4 +1,4 @@
-package thisisjava.ch20.oracle.sec09.exam02;
+package thisisjava.ch20.oracle.sec12;
 
 import java.sql.Blob;
 import java.util.Date;
@@ -16,6 +16,5 @@ public class Board {
 	private Date bdate;
 	private String bfilename;
 	private Blob bfiledata;
-	
-	
+
 }

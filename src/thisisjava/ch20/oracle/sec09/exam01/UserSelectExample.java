@@ -28,6 +28,8 @@ public class UserSelectExample {
 						+ "userage, "
 						+ "useremail "
 					+ "FROM USERS WHERE userid = ?";
+			
+			System.out.println(sql);
 
 			// PreparedStatement 얻기 및 값 지정
 			PreparedStatement pstmt = conn.prepareStatement(sql);

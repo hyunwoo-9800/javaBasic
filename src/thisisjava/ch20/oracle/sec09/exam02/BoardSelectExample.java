@@ -17,7 +17,7 @@ public class BoardSelectExample {
 		Connection conn = null;
 
 		try {
-			
+
 			// JDBC Driver 등록
 			Class.forName("oracle.jdbc.OracleDriver");
 
@@ -25,15 +25,17 @@ public class BoardSelectExample {
 			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/XE", "c##hw", "0000");
 
 			// 매개변수화된 SQL문 작성
-			String sql = "SELECT "
-						+ "bno, "
-						+ "btitle, "
-						+ "bcontent, "
-						+ "bwriter, "
-						+ "bdate, "
-						+ "bfilename, "
-						+ "bfiledata "
-					+ "FROM boards WHERE bwriter = ?";
+			String sql = "SELECT " +
+							"A.bno, " +
+							"row_number() over(order by A.bdate) as boradNum, " +
+							"A.btitle, " +
+							"A.bcontent, " +
+							"A.bwriter, " +
+							"A.bdate, " +
+							"A.bfilename, " +
+							"A.bfiledata " +
+							"FROM boards A " +
+						 "WHERE A.bwriter = ?";
 
 			// PreparedStatement 얻기 및 값 지정
 			PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -45,6 +47,7 @@ public class BoardSelectExample {
 
 				Board board = new Board();
 				board.setBno(rs.getInt("bno"));
+				board.setBoardNum(rs.getInt("boradNum"));
 				board.setBtitle(rs.getString("btitle"));
 				board.setBcontent(rs.getString("bcontent"));
 				board.setBwriter(rs.getString("bwriter"));
@@ -53,49 +56,46 @@ public class BoardSelectExample {
 				board.setBfiledata(rs.getBlob("bfiledata"));
 
 				System.out.println(board);
-				
+
 				// 파일로 저장
 				Blob blob = board.getBfiledata();
-				if (blob != null) {
-					
-					InputStream is = blob.getBinaryStream();
-					OutputStream os = new FileOutputStream("C:/test/" + board.getBfilename());
-					is.transferTo(os);
-					os.flush();
-					os.close();
-					is.close();
-					
-				}
+
+				InputStream is = blob.getBinaryStream();
+				OutputStream os = new FileOutputStream("C:/test/" + board.getBfilename());
+				is.transferTo(os);
+				os.flush();
+				os.close();
+				is.close();
 
 			}
-			
+
 			rs.close();
 			pstmt.close();
 
 		} catch (Exception e) {
 			// TODO: handle exception
-			
+
 			e.printStackTrace();
-			
+
 		} finally {
-			
+
 			if (conn != null) {
-				
+
 				try {
-					
+
 					conn.close();
-					
+
 				} catch (Exception e) {
-					
+
 					// TODO: handle exception
-					
+
 					e.printStackTrace();
-					
+
 				}
-				
+
 			} // conn 종료
-			
-		} //  try - catch - finally 종료
+
+		} // try - catch - finally 종료
 
 	} // main 끝
 

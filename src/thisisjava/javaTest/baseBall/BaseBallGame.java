@@ -1,7 +1,7 @@
 /**
  * 
  */
-package thisisjava.javaTest;
+package thisisjava.javaTest.baseBall;
 
 import java.util.Scanner;
 

@@ -6,9 +6,9 @@ package algorithm.chap01;
 import java.util.Scanner;
 
 /**
- * 입력한 정숫값의 부호 판단
+ * 
  */
-public class JudgeSign {
+public class SumFor {
 
 	/**
 	 * @param args
@@ -17,27 +17,23 @@ public class JudgeSign {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
-
-		System.out.println("정수를 입력하세요.");
-
+		
+		System.out.println("1부터 n까지의 합을 구합니다.");
+		System.out.print("n값 : ");
 		int n = Integer.parseInt(sc.nextLine());
-
-		if (0 < n) {
-
-			System.out.println("양수입니다.");
-
-		} else if (n < 0) {
-
-			System.out.println("음수입니다.");
-
-		} else {
-
-			System.out.println("0입니다.");
-
+		
+		int sum = 0; // 합
+		
+		for(int i = 1; i <= n; i++) {
+			
+			sum += i;
+			
 		}
-
+		
+		System.out.println("1부터 " + n + "까지의 합은 " + sum + "입니다.");
+		
 		sc.close();
-
+		
 	} // main 끝
 
 } // class 끝

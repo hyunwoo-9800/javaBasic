@@ -46,10 +46,10 @@
 
 ## 디렉토리 구조
 
-- javaBasic
-  ├─ algorithm
-  ├─ exercise
-  ├─ lambda
-  ├─ test
-  ├─ thisisjava
-  └─ README.md
+📦 javaBasic  
+┣ 📂 algorithm  
+┣ 📂 exercise  
+┣ 📂 lambda  
+┣ 📂 test  
+┣ 📂 thisisjava  
+┗ 📄 README.md

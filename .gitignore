@@ -1,1 +1,23 @@
-/bin/
+# 이클립스 설정 무시
+.metadata/
+*.log
+*.tmp
+
+# 이클립스 플러그인 관련 설정 무시
+*.prefs
+*.bak
+
+# 빌드 관련 폴더 무시
+bin/
+target/
+build/
+
+# 기타 무시
+*.class
+*.jar
+*.war
+*.ear
+
+# OS별 임시 파일 무시
+.DS_Store
+Thumbs.db

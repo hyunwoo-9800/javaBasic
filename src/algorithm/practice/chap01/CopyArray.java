@@ -54,6 +54,8 @@ public class CopyArray {
 		reverseCopy(a, b);
 		System.out.println("a배열 = " + Arrays.toString(a));
 		System.out.println("b배열 = " + Arrays.toString(b));
+		
+		sc.close();
 
 	} // main 끝
 

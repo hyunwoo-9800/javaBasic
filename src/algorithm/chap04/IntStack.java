@@ -96,7 +96,7 @@ public class IntStack {
 	}
 	
 	// 스택에서 x를 찾아 인덱스를 반환(없으면 -1 반환)
-	public int idexOf(int x) {
+	public int indexOf(int x) {
 		
 		// 꼭대기부터 선형 검색
 		for (int i = ptr - 1; 0 <= i; i--) {
@@ -114,7 +114,7 @@ public class IntStack {
 	}
 	
 	// 스택의 용량을 반환
-	public int getCapacty() {
+	public int getCapacity() {
 		
 		return capacity;
 		

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
 
-import algorithm.util.InputCheck;
+import algorithm.util.ConsoleInput;
 import lombok.Data;
 
 // 신체검사 데이터 배열에서 이진 검색
@@ -53,7 +53,7 @@ public class PhyExamSearch {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		InputCheck ic = new InputCheck();
+		ConsoleInput ci = new ConsoleInput(sc);
 
 		// 키의 오름차순으로 정렬
 		PhyscData[] x = {
@@ -69,7 +69,7 @@ public class PhyExamSearch {
 		};
 		
 		
-		int height = ic.getValidInt("키가 몇 cm인 사람을 찾고 있나요?: ", sc);
+		int height = ci.readInt("키가 몇 cm인 사람을 찾고 있나요?: ");
 		
 		int idx = Arrays.binarySearch(
 				

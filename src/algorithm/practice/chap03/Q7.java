@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
 
-import algorithm.util.DoubleCheck;
+import algorithm.util.ConsoleInput;
 import lombok.Data;
 
 // 내림차순된 시력 중 특정 시력 검색 
@@ -52,7 +52,7 @@ public class Q7 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		DoubleCheck dc = new DoubleCheck();
+		ConsoleInput ci = new ConsoleInput(sc);
 
 		// 시력의 내림차순으로 정렬
 		PhyscData[] x = {
@@ -68,7 +68,7 @@ public class Q7 {
 		};
 		
 		
-		double vision = dc.getValidInt("시력이 몇인 사람을 찾고 있나요?: ", sc);
+		double vision = ci.readDouble("시력이 몇인 사람을 찾고 있나요?: ");
 		
 		int idx = Arrays.binarySearch(
 				

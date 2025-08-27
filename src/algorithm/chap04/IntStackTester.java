@@ -2,7 +2,7 @@ package algorithm.chap04;
 
 import java.util.Scanner;
 
-import algorithm.util.InputCheck;
+import algorithm.util.ConsoleInput;
 
 // int형 고정 길이 스택의 사용 예
 public class IntStackTester {
@@ -12,15 +12,15 @@ public class IntStackTester {
 		
 		Scanner sc = new Scanner(System.in);
 		IntStack s = new IntStack(64);			// 최대 64개를 푸시 할 수 있는 스택
-		InputCheck ic = new InputCheck();
+		ConsoleInput ci = new ConsoleInput(sc);
 		
 		while (true) {
 			
 			System.out.println();				// 메뉴 구분을 위한 빈 행
-			System.out.printf("현재 데이터 개수: %d / %d\n", s.size(), s.getCapacty());
-			System.out.print("(1) 푸시    (2) 팝    (3) 피크    (4) 덤프    (5) 종료");
+			System.out.printf("현재 데이터 개수: %d / %d\n", s.size(), s.getCapacity());
+			System.out.print("(1) 푸시    (2) 팝    (3) 피크    (4) 덤프    (0) 종료\n");
 			
-			int menu = ic.getValidInt("", sc);
+			int menu = ci.readIntInRange("\n메뉴 선택 >>", 0, 4);
 			
 			if (menu == 0) {
 				
@@ -34,8 +34,7 @@ public class IntStackTester {
 			
 			case 1:								// 푸시
 				
-				System.out.print("데이터: ");
-				x = ic.getValidInt("", sc);
+				x = ci.readInt("데이터: ");
 				
 				try {
 					

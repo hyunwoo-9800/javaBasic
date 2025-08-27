@@ -3,25 +3,23 @@ package algorithm.chap03;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import algorithm.util.InputCheck;
+import algorithm.util.ConsoleInput;
 
 // Arrays.binarySearch로 이진검색
 public class BinarySearchTester {
-
-	// 입력 값 체크용
-	static InputCheck inputCheck = new InputCheck();
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
+		ConsoleInput ci = new ConsoleInput(sc);
 
-		int num = inputCheck.getValidInt("요솟수: ", sc);
+		int num = ci.readInt("요솟수: ");
 		int[] x = new int[num];
 
 		System.out.println("오름차순으로 입력하세요.");
 
-		x[0] = inputCheck.getValidInt("x[0]: ", sc);
+		x[0] = ci.readInt("x[0]: ");
 
 		for (int i = 1; i < num; i++) {
 
@@ -29,7 +27,7 @@ public class BinarySearchTester {
 
 			do {
 
-				value = inputCheck.getValidInt("x[" + i + "]: ", sc);
+				value = ci.readInt("x[" + i + "]: ");
 
 				if (value < x[i - 1]) {
 
@@ -43,7 +41,7 @@ public class BinarySearchTester {
 
 		} // for 문 종료
 
-		int key = inputCheck.getValidInt("검색할 값: ", sc);
+		int key = ci.readInt("검색할 값: ");
 		
 		// Arrays.binarySearch로 검색
 		int idx = Arrays.binarySearch(x, key);
@@ -55,6 +53,8 @@ public class BinarySearchTester {
 		} else {
 			
 			System.out.println("그 값은 x[" + idx + "]에 있습니다.");
+			System.out.println("x[" + idx + "] = " + x[idx]);
+			System.out.println("전체 배열 = " + Arrays.toString(x));
 			
 		}
 

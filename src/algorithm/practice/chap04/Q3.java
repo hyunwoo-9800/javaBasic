@@ -70,7 +70,7 @@ public class Q3 {
 				try {
 					
 					x = s.peek(DoubleHeadIntStack.AorB.StackA);
-					System.out.println("피크한한 데이터는 " + x + "입니다.");
+					System.out.println("피크한 데이터는 " + x + "입니다.");
 					
 				} catch (DoubleHeadIntStack.EmptyDoubleHeadIntStackException e) {
 					

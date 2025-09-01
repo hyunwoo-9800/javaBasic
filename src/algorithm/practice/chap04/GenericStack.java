@@ -75,7 +75,7 @@ public class GenericStack<E> {
 		
 	}
 	
-	// 스택에서서 가장 위에 있는 데이터를 확인
+	// 스택에서 가장 위에 있는 데이터를 확인
 	public E peek() throws EmptyInStackException {
 		
 		// 스택이 비어있음

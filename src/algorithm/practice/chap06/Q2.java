@@ -1,0 +1,95 @@
+package algorithm.practice.chap06;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+import algorithm.util.ConsoleInput;
+
+// 버블 정렬(교환 과정 출력)
+public class Q2 {
+
+	// a[idx1]과 a[idx2]의 값을 교환
+		static void swap(int[] arr, int idx1, int idx2) {
+			
+			int temp = arr[idx1];
+			arr[idx1] = arr[idx2];
+			arr[idx2] = temp;
+			
+		}
+		
+		// 버블 정렬
+		static void bubbleSort(int[] arr) {
+			
+			int ccnt = 0;	// 비교 회수
+			int scnt = 0;	// 교환 회수
+			
+			for (int i = 0; i < arr.length - 1; i++) {
+				
+				System.out.println();
+				System.out.printf("패스%d : \n", i + 1);
+				
+				// 패스
+				for (int j = 0; j < arr.length - i - 1; j++) {
+					
+					for (int m = 0; m < arr.length - 1; m++) {
+						
+						System.out.printf("%3d %c" , arr[m], (m != j-1) ? ' ' : (arr[j - 1] > arr[j]) ? '+' : '-');
+						
+					}
+																				
+					System.out.printf("%3d\n", arr[arr.length - 1]);
+
+					ccnt++;
+					
+					if (arr[j + 1] < arr[j]) {
+						
+						scnt++;
+						swap(arr, j, j + 1);
+						
+					}
+					
+					for (int m = 0; m < arr.length - 1; m++) {
+						
+						System.out.printf("%3d  " , arr[m]);
+						
+					}
+					
+					System.out.println();
+					
+				}
+				
+			}
+			
+			System.out.println("비교를 " + ccnt + "회 했습니다.");
+			System.out.println("교환을 " + scnt + "회 했습니다.\n");
+			
+		} // bubbleSort 끝
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		ConsoleInput ci = new ConsoleInput(sc);
+		
+		System.out.println("버블 정렬");
+		
+		int[] x = new int[ci.readInt("요솟수: ")];
+		
+		for (int i = 0; i < x.length; i++) {
+			
+			System.out.print("입력 값 x[" + i + "]: ");
+			x[i] = ci.readInt("");
+			
+		}
+		
+		System.out.println("\n정렬 전 배열 값은 " + Arrays.toString(x) + " 입니다.");
+		
+		bubbleSort(x);	// 배열 x를 버블 정렬
+		
+		System.out.println("오름차순으로 정렬했습니다.");
+		System.out.println("정렬 후 배열 값은 " + Arrays.toString(x) + " 입니다.");
+		
+		
+	}
+
+}

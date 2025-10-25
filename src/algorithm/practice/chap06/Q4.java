@@ -6,7 +6,7 @@ import java.util.Scanner;
 import algorithm.util.ConsoleInput;
 
 // 버블 정렬(교환 과정 출력)
-public class Q2 {
+public class Q4 {
 
 	// a[idx1]과 a[idx2]의 값을 교환
 		static void swap(int[] arr, int idx1, int idx2) {
@@ -23,40 +23,37 @@ public class Q2 {
 			int ccnt = 0;	// 비교 회수
 			int scnt = 0;	// 교환 회수
 			
-			for (int i = 0; i < n - 1; i++) {
+			int k = 0;			// a[k]보다 앞쪽은 정렬을 마친 상태
+			int i = 0;
+			
+			while (k < n - 1) {
 				
-				System.out.println();
-				System.out.printf("패스%d : \n", i + 1);
+				System.out.printf("패스%d : \n", ++i);
+				int last = n - 1;			// 마지막으로 요소를 교환한 위치
 				
 				// 패스
-				for (int j = n - 1; i < j; j--) {
+				for (int j = n - 1; k < j; j--) {
 					
 					for (int m = 0; m < n - 1; m++) {
 						
-						System.out.printf("%3d %c" , arr[m], (m != j-1) ? ' ' : (arr[j - 1] > arr[j]) ? '+' : '-');
+						System.out.printf("%3d %c" , arr[m], (m != j - 1) ? ' ' : (arr[j] < arr[j - 1]) ? '+' : '-');
 						
 					}
-																				
+					
 					System.out.printf("%3d\n", arr[n - 1]);
-
 					ccnt++;
 					
 					if (arr[j] < arr[j - 1]) {
 						
-						scnt++;
 						swap(arr, j - 1, j);
+						last = j;
+						scnt++;
 						
 					}
-					
-					for (int m = 0; m < n; m++) {
-						
-						System.out.printf("%3d  " , arr[m]);
-						
-					}
-					
-					System.out.println();
 					
 				}
+				
+				k = last;
 				
 			}
 			

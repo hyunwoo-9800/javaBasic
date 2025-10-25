@@ -6,7 +6,7 @@ import java.util.Scanner;
 import algorithm.util.ConsoleInput;
 
 // 버블 정렬(교환 과정 출력)
-public class Q2 {
+public class Q3 {
 
 	// a[idx1]과 a[idx2]의 값을 교환
 		static void swap(int[] arr, int idx1, int idx2) {
@@ -24,6 +24,8 @@ public class Q2 {
 			int scnt = 0;	// 교환 회수
 			
 			for (int i = 0; i < n - 1; i++) {
+				
+				int exchg = 0;	// 패스에서 교환하는 횟수를 저장
 				
 				System.out.println();
 				System.out.printf("패스%d : \n", i + 1);
@@ -43,8 +45,9 @@ public class Q2 {
 					
 					if (arr[j] < arr[j - 1]) {
 						
-						scnt++;
 						swap(arr, j - 1, j);
+						exchg++;
+						scnt++;
 						
 					}
 					
@@ -55,6 +58,13 @@ public class Q2 {
 					}
 					
 					System.out.println();
+					
+				}
+				
+				// 교환이 이루어지지 않았다면 중지
+				if (exchg == 0) {
+					
+					break;
 					
 				}
 				
